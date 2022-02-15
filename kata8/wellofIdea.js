@@ -18,15 +18,12 @@ const well = x =>{
             console.log("current = good");
             count++
             console.log(`count=${count}`); 
-        }
-        
+           }    
     }
     if (count === 1 || count ==2) return "Published" 
     if (count >= 2)  return "I smell a series!"
      return "Fail"
        }
-    
-
     const result = well(testData)
     console.log(result);
 
