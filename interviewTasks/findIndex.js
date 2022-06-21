@@ -12,10 +12,10 @@ String find = "aa"
 index = -1
 */
 
-let testStr = "My name is Kamila";
-let word1 = "name";
-let word2 = "aa";
-const findIndex = (s, f) => s.indexOf(f);
+// let testStr = "My name is Kamila";
+// let word1 = "name";
+// let word2 = "aa";
+// const findIndex = (s, f) => s.indexOf(f);
 
 // const res1 = findIndex(testStr, word1);
 // const res2 = findIndex(testStr, word2);
@@ -49,20 +49,20 @@ const findIndex = (s, f) => s.indexOf(f);
 // };
 // findIndexForLoop(testStr, word1);
 
-const findIndexForLoop = (s, f) => {
-  let current;
-  let counter = 0;
-  for (i = 0; i < s.length; i++) {
-    current = s[i];
-    if (current === f[counter]) {
-      counter++;
-      if (counter === f.length) {
-        return i - counter + 1;
-      }
-    } else {
-      counter = 0;
-    }
-  }
-  return false;
-};
-console.log(findIndexForLoop(testStr, word2));
+// const findIndexForLoop = (s, f) => {
+//   let current;
+//   let counter = 0;
+//   for (i = 0; i < s.length; i++) {
+//     current = s[i];
+//     if (current === f[counter]) {
+//       counter++;
+//       if (counter === f.length) {
+//         return i - counter + 1;
+//       }
+//     } else {
+//       counter = 0;
+//     }
+//   }
+//   return false;
+// };
+// console.log(findIndexForLoop(testStr, word2));
