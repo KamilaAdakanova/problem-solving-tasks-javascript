@@ -34,7 +34,9 @@ const plusMinus1 = (arr) => {
   }
   let rationNeg = (countForNeg / arr.length).toFixed(6);
   let rationPos = (countForPos / arr.length).toFixed(6);
-  let ration0 = ((arr.length - countForNeg - countForPos) / arr.length).toFixed(6);
+  let ration0 = ((arr.length - countForNeg - countForPos) / arr.length).toFixed(
+    6
+  );
   return `${rationNeg}\n${rationPos}\n${ration0}`;
 };
 let res1 = plusMinus1(testArr);

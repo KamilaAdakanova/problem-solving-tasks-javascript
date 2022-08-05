@@ -45,4 +45,4 @@ function countAba(str, f) {
   }
   return countWords;
 }
-console.log(countAba("hjh4343abaeoeru4abсiu343abс", "aba"));
+console.log(countAba('hjh4343abaeoeru4abсiu343abс', 'aba'));
