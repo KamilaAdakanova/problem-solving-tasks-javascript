@@ -10,12 +10,29 @@
 
 //3
 const fibonacci = (num) => {
-  const arr = [0, 1]; //1, 2
+  const arr = [1, 1]; //1, 2
 
   for (let i = 2; i <= num; i++) {
     let newElement = arr[i - 2] + arr[i - 1];
     arr.push(newElement);
   }
-  return arr[arr.length - 1];
+  console.log(arr);
+  return arr[arr.length - 1]; //% 10 if we need to return only the last digit of arr of arr
 };
-console.log(fibonacci(7));
+//console.log(fibonacci(302));
+
+//https://www.codewars.com/kata/52549d3e19453df56f0000fe/train/javascript
+//6 kyu Fibonacci Reloaded
+
+function fib(n) {
+  let arr = [0, 1];
+  for (let i = 2; i <= n; i++) {
+    let newEl = arr[i - 2] + arr[i - 1];
+    arr.push(newEl);
+  }
+  console.log(arr);
+  return arr[arr.length - 2];
+}
+console.log(fib(4));
+
+//01123;

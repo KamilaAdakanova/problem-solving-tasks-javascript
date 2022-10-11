@@ -27,7 +27,7 @@
     "types": ["cypress", "chai", "mocha"]
   },
   "terminal.integrated.enableMultiLinePasteWarning": false,
-  "window.zoomLevel": 0,
+  "window.zoomLevel": 1,
   "security.workspace.trust.untrustedFiles": "newWindow",
   "security.workspace.trust.banner": "never",
   "security.workspace.trust.enabled": false

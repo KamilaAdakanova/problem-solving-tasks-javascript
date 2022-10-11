@@ -23,20 +23,24 @@ const birthdayCakeCandles1 = (candles) => {
   let hash = {};
   let max = candles[0];
 
-  for (let i = 1; i < candles.length; i++) {
+  for (let i = 0; i < candles.length; i++) {
     let current = candles[i];
+
     //console.log(current);
-    if (current > max) {
-      max = current;
-      // hash[current] = 1;
+    if (!hash[current]) {
+      hash[current] = 1;
 
       // console.log(hash[candles[i]]);
-    } else if (current === max) {
-      hash[current] += 1;
+    } else hash[current]++;
+
+    if (current > max) {
+      max = current;
     }
-    // console.log(hash);
   }
-  return hash;
+  // console.log(hash);
+  // console.log(max);
+  // console.log(hash[max]);
+  return hash[max];
 };
 res1 = birthdayCakeCandles1(testArr);
 console.log(res1);
