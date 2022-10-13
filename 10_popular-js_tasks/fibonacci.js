@@ -16,7 +16,7 @@ const fibonacci = (num) => {
     let newElement = arr[i - 2] + arr[i - 1];
     arr.push(newElement);
   }
-  console.log(arr);
+  //console.log(arr);
   return arr[arr.length - 1]; //% 10 if we need to return only the last digit of arr of arr
 };
 //console.log(fibonacci(302));
@@ -30,9 +30,46 @@ function fib(n) {
     let newEl = arr[i - 2] + arr[i - 1];
     arr.push(newEl);
   }
-  console.log(arr);
+  //console.log(arr);
   return arr[arr.length - 2];
 }
-console.log(fib(4));
+//console.log(fib(4));
 
 //01123;
+
+//https://www.codewars.com/kata/56b7771481290cc283000f28/train/javascript
+
+//LAST DIGIT FIBONACCI
+function lastFibDigit(n) {
+  let fib1 = 1
+  let fib2 = 1
+  let next 
+  for (let i = 2; i < n; i++) {
+    console.log({i});
+     next= (fib1 + fib2) % 10;
+     console.log("Sum of fib1 and fib2",{next});
+    fib1 = fib2
+    console.log("fib1 was fib2 Resighted",{fib1});
+    fib2 = next
+    console.log("Resighted fib 2 (it was previous number)",{fib2});
+
+   
+  }
+ console.log(fib1, fib2, next);
+  return fib2;
+}
+console.log(lastFibDigit(50004));
+
+// function lastFibDigit(n) {
+//   let first = 1;
+//   let second = 1;
+//   let res;
+
+//   for (let i = 2; i <= n; i++) {
+//     res = (first + second) % 10;
+//     first = second;
+//     second = res;
+//   }
+//   res;
+// }
+// console.log(lastFibDigit(302));
