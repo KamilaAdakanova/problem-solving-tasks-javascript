@@ -28,8 +28,7 @@ function outed(meet, boss) {
     }
     countPeople++;
   }
-  console.log({ countPeople });
-  // return commonRate / countPeople <= 5 ? 'Get Out Now!' : 'Nice Work Champ!';
+  return commonRate / countPeople <= 5 ? 'Get Out Now!' : 'Nice Work Champ!';
 }
 res = outed(meet, boss);
 console.log(res);
