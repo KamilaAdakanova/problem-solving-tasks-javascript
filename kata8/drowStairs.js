@@ -1,22 +1,37 @@
 const testNum = 5;
-function drawStairs(n) {
-  let letter = 'I';
-  let result = '';
 
-  for (let i = 0; i < n; i++) {
-    if (n === 1) {
-      result += letter;
+// function drawStairs(n) {
+//   let letter = 'I';
+//   let result = '';
+
+//   for (let i = 2; i <= n; i++) {
+//     if (n === 1) {
+//       result += letter;
+//     }
+//     if (i == n) {
+//       result += letter.repeat(n - 1);
+//     } else {
+//       result += letter + `\n `;
+//     }
+//   }
+//   return result;
+// }
+// res = drawStairs(testNum);
+// console.log(res);
+
+function drawStairs(n) {
+  let str = 'I';
+  for (let i = 2; i <= n; i++) {
+    str += '\n';
+
+    for (let j = 1; j < i; j++) {
+      str += ' ';
     }
-    if (i == n) {
-      result += letter.repeat(n - 1);
-    } else {
-      result += letter + `\n `;
-    }
+    str += 'I';
   }
-  return result;
+  return str;
 }
-res = drawStairs(testNum);
-console.log(res);
+console.log(drawStairs(5));
 
 // function pyramid(n) {
 //   for (let i = 1; i <= n; i++) {
