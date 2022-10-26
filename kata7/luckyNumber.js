@@ -10,3 +10,9 @@ function isLucky(n) {
   return sum % 9 == 0;
 }
 console.log(isLucky(189237));
+
+var filterLucky = (x) => {
+  let newArr = [];
+  x.map((el) => (String(el).includes(7) ? newArr.push(el) : ''));
+  return newArr;
+};
