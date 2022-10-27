@@ -1,33 +1,33 @@
-function highAndLow(numbers) {
-  let min = null;
-  let max = null;
-  let current = '';
-  for (let i = 0; i < numbers.length; i++) {
-    console.log('Number or space ', numbers[i]);
-    if (numbers[i] == ' ' || i == numbers.length - 1) {
-      if (min == null && max == null) {
-        min = +current;
-        max = +current;
+// function highAndLow(numbers) {
+//   let min = null;
+//   let max = null;
+//   let current = '';
+//   for (let i = 0; i < numbers.length; i++) {
+//     console.log('Number or space ', numbers[i]);
+//     if (numbers[i] == ' ' || i == numbers.length - 1) {
+//       if (min == null && max == null) {
+//         min = +current;
+//         max = +current;
 
-        console.log('If min and max are null', min, max, current);
-      } else if (+current < min) {
-        min = +current;
+//         console.log('If min and max are null', min, max, current);
+//       } else if (+current < min) {
+//         min = +current;
 
-        console.log('Min', min, current);
-      } else if (+current > max) {
-        max = +current;
+//         console.log('Min', min, current);
+//       } else if (+current > max) {
+//         max = +current;
 
-        console.log('Max', max, current);
-      }
-    } else {
-      current += numbers[i];
-    }
-    current = '';
-  }
-  return `${max} ${min}`;
-}
-res = highAndLow('1 2 0 3 8');
-console.log(res);
+//         console.log('Max', max, current);
+//       }
+//     } else {
+//       current += numbers[i];
+//     }
+//     current = '';
+//   }
+//   return `${max} ${min}`;
+// }
+// res = highAndLow('1 2 0 3 8'); // this solution is good for positive numbers
+// console.log(res);
 
 const highAndLow = (numbers) => {
   let arr = numbers.split(' ');
