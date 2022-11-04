@@ -9,7 +9,7 @@ anagram('fried','fired') // true;
 anagram('gainly', 'lying') //true;
 anagram('listen', 'bye')  // false; */
 const testStr1 = 'fried';
-const testStr2 = '';
+const testStr2 = 'fired';
 
 const anagram = (word1, word2) => {
   if (word1.length !== word2.length) {
@@ -28,7 +28,7 @@ const anagram = (word1, word2) => {
   };
   resTable1 = createHashTable(word1);
   resTable2 = createHashTable(word2);
-
+  console.log(resTable1);
   for (let key in resTable1) {
     if (resTable1[key] !== resTable2[key]) {
       return false;
