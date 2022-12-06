@@ -4,14 +4,8 @@
 'A', 'B', 'C';
 //args_count(1, 2, 3, 10) -> 4
 */
-const args_count = (arg) => {
-  let arr = arg;
-  let count = 0;
-  for (let i = 0; i < arg.length; i++) {
-    console.log(arg[i]);
-    //count++;
-  }
-  // return count;
-};
+function args_count() {
+  return arguments.length;
+}
 
 console.log(args_count('A', 'B', 'C'));
